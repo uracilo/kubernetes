@@ -1,13 +1,13 @@
 # kubernetes
 
-#Init command
+## Init command
 ```bash
 kubeadm init --apiserver-advertise-address $(hostname -i) --pod-network-cidr 10.5.0.0/16
 kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube-router/master/daemonset/kubeadm-kuberouter.yaml
 ```
 
 
-# Get general info
+## Get general info
 
 ```bash
 kubectl cluster-info
@@ -17,7 +17,7 @@ kubectl get deployments
 kubectl get services
 ```
 
-#Mount a service
+## Mount a service
 ```bash
 kubectl create deployment nginx --image=nginx
 kubectl get svc
