@@ -1,0 +1,27 @@
+
+
+22 systemctl daemon- reload
+23 systemctl restart docker
+24 systemctl status docker
+25 systemctl status containerd
+26 systemctl status kubelet
+27 echo "exec-opts": ["native.cgroupdriver=systemd] etc/docker/ daemon. json
+28 systemctl restart docker
+29 vi /etc/default/kubelet
+S0 systemctl daemon-reload
+31 systemctl restart kubelet
+32 systemctl status kubelet
+33 kubeadm config images pull
+34 Systtemctl status kubelet
+35 kubeadm init --pod-network-cidr 192.168.0.0/16
+36 kdir -P SHOME/.kube
+37 sudo cp -i /etc/kubernetes/acimin. conf $HOME/. kube/ config
+38 sudo chown $(id -u):$(id -8) $HOME/.kube/config
+39 kubectl get nodes
+40 kubectl get pods --all-namespaces
+41 kubectl apply-f https://docs . projectcalico.org/manifests/calico.yaml
+42 kubectl get pods *dil-ldepae
+43 kubectl get nodes
+44 kubectI describe node ip-10-0-0-201.ap-south-1.compute.internal
+45 kubecti taint nodes 1p-10-0-0-201.ap-south-1.compute. internal node-role. kubernetes. i0/control-plane : Noschedule-
+46 kubecti get nodes
